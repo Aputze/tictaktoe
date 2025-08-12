@@ -2,7 +2,7 @@
 
 A polished Tic-Tac-Toe with a modern UI, AI opponent, and an optional realistic “pebble-on-fabric” theme.
 
-Built with the help of Cursor and GPT-5 (AI).
+Crafted in Cursor, co‑created with GPT‑5.
 
 ## Versions Available
 
