@@ -1,32 +1,42 @@
-# Tic-Tac-Toe Game
+# Tic-Tac-Toe (Web + Console)
 
-A complete Tic-Tac-Toe game implementation with both web and console versions.
+A polished Tic-Tac-Toe with a modern UI, AI opponent, and an optional realistic “pebble-on-fabric” theme.
 
 ## Versions Available
 
-1. **Web Version** (`index.html`, `styles.css`, `script.js`) - Modern, responsive web game
-2. **Console Version** (`tic_tac_toe.py`) - Python console-based game
+1. **Web Version** (`index.html`, `styles.css`, `script.js`) — Responsive UI, theme toggle, scores, AI
+2. **Console Version** (`tic_tac_toe.py`) — Python console-based game
+
+## Screenshots
+
+Modern web UI (pebble theme):
+
+![Board Screenshot](docs/screenshot-board.svg)
 
 ## Web Version Features
 
 ## Features
 
-- **Clean, Modern UI**: Beautiful gradient design with smooth animations
-- **Responsive Design**: Works perfectly on both desktop and mobile devices
-- **Score Tracking**: Keeps track of wins for both players
-- **Visual Feedback**: Winning combinations are highlighted with animations
-- **Winning Line**: Visual line shows the winning combination
-- **Sound Effects**: Visual feedback that simulates sound effects
-- **Game Controls**: Restart game and reset scores functionality
+- **Beautiful UI**: Modern design with theme toggle (light/dark) and a realistic pebble board theme
+- **Play vs AI**: Easy (random) or Impossible (minimax) with selectable AI side (X or O)
+- **Responsive**: Works on desktop and mobile
+- **Persistent scores**: Stored in `localStorage`
+- **A11y + Keyboard**: Cells are focusable; Enter/Space to play
+- **Winning highlights**: Animated line and celebratory confetti
+- **Controls**: Restart round, reset scores
 
-## How to Play
+## How to Play (Web)
 
-1. **Start the Game**: Open `index.html` in your web browser
+1. Open `index.html` in a browser
 2. **Game Rules**: 
    - Player X goes first (always)
    - Click on any empty cell to place your mark
    - Get three of your marks in a row (horizontally, vertically, or diagonally) to win
    - If all cells are filled with no winner, it's a draw
+
+### Options
+- Toggle “2 Players” vs “Vs AI”
+- Pick AI difficulty (Easy/Impossible) and side (X/O)
 
 ## Game Controls
 
@@ -62,24 +72,23 @@ tic-tac-toe/
 ## Getting Started
 
 ### Web Version
-1. Download or clone the project files
-2. Open `index.html` in your web browser
-3. Start playing!
+1. Clone the repo
+2. Open `index.html` in a browser
+3. Play!
 
 ### Console Version
 1. Make sure you have Python 3.6+ installed
-2. Run: `python3 tic_tac_toe.py`
+2. Run: `python tic_tac_toe.py`
 3. Follow the on-screen instructions
 4. Type 'quit' at any time to exit
 
 ## Customization
 
-You can easily customize the game by:
-- Changing colors in `styles.css`
-- Modifying game logic in `script.js`
-- Adding new features like AI opponent
-- Implementing actual sound effects
+You can customize the experience by:
+- Adjusting theme variables and visuals in `styles.css`
+- Extending game logic and AI in `script.js`
+- Swapping the “pebble” art for alternative themes (e.g., chalkboard)
 
 ## License
 
-This project is open source and available under the MIT License.
+MIT

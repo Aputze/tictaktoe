@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="fabric" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f2ea"/>
+      <stop offset="100%" stop-color="#efe9de"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="900" height="520" fill="#0b1220"/>
+  <g transform="translate(170,60)">
+    <rect width="560" height="400" rx="16" fill="url(#fabric)" filter="url(#shadow)"/>
+    <!-- grid lines -->
+    <g stroke="#222" stroke-width="10" opacity="0.9">
+      <line x1="185" y1="40" x2="185" y2="360"/>
+      <line x1="375" y1="40" x2="375" y2="360"/>
+      <line x1="40" y1="185" x2="520" y2="185"/>
+      <line x1="40" y1="275" x2="520" y2="275" opacity="0"/>
+    </g>
+    <!-- stones -->
+    <g>
+      <ellipse cx="120" cy="120" rx="58" ry="50" fill="#cfc9bf"/>
+      <path d="M120,155 C120,155 85,135 85,110 C85,97 96,88 110,88 C116,88 120,90 122,94 C124,90 128,88 134,88 C148,88 159,97 159,110 C159,135 120,155 120,155 Z" fill="#ff4f9a" stroke="#ff0f6a" stroke-width="6"/>
+
+      <ellipse cx="280" cy="120" rx="58" ry="50" fill="#4b4b4b"/>
+      <path d="M245 120 L315 120 M315 90 L245 150" stroke="#69e64a" stroke-width="14" stroke-linecap="round"/>
+
+      <ellipse cx="440" cy="120" rx="58" ry="50" fill="#cfc9bf"/>
+      <path d="M440,155 C440,155 405,135 405,110 C405,97 416,88 430,88 C436,88 440,90 442,94 C444,90 448,88 454,88 C468,88 479,97 479,110 C479,135 440,155 440,155 Z" fill="#ff4f9a" stroke="#ff0f6a" stroke-width="6"/>
+
+      <ellipse cx="120" cy="280" rx="58" ry="50" fill="#4b4b4b"/>
+      <path d="M85 280 L155 280 M155 250 L85 310" stroke="#69e64a" stroke-width="14" stroke-linecap="round"/>
+
+      <ellipse cx="280" cy="280" rx="58" ry="50" fill="#cfc9bf"/>
+      <path d="M280,315 C280,315 245,295 245,270 C245,257 256,248 270,248 C276,248 280,250 282,254 C284,250 288,248 294,248 C308,248 319,257 319,270 C319,295 280,315 280,315 Z" fill="#ff4f9a" stroke="#ff0f6a" stroke-width="6"/>
+
+      <ellipse cx="440" cy="280" rx="58" ry="50" fill="#4b4b4b"/>
+      <path d="M405 280 L475 280 M475 250 L405 310" stroke="#69e64a" stroke-width="14" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="450" y="34" text-anchor="middle" fill="#e6ebf5" font-family="Inter,Segoe UI,Arial" font-size="28" font-weight="700">Tic-Tac-Toe — Pebble Theme</text>
+</svg>
+
