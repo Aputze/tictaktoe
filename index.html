@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="topbar">
+                <h1>Tic-Tac-Toe</h1>
+                <div class="topbar-actions">
+                    <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme" type="button">
+                        <span class="icon-sun" aria-hidden="true"></span>
+                        <span class="icon-moon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="score-board" aria-live="polite">
+                <div class="score-item" id="score-x-card" aria-label="Player X score">
+                    <span class="player-label">Player X</span>
+                    <span class="score" id="score-x">0</span>
+                </div>
+                <div class="score-item" id="score-o-card" aria-label="Player O score">
+                    <span class="player-label">Player O</span>
+                    <span class="score" id="score-o">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="options-bar" id="options-bar">
+            <div class="segmented" role="group" aria-label="Game mode">
+                <button id="mode-human" class="seg-btn" type="button" aria-pressed="true">2 Players</button>
+                <button id="mode-ai" class="seg-btn" type="button" aria-pressed="false">Vs AI</button>
+            </div>
+            <div class="ai-controls">
+                <label class="field">
+                    <span class="field-label">Difficulty</span>
+                    <select id="ai-difficulty" class="select" disabled>
+                        <option value="easy">Easy</option>
+                        <option value="hard" selected>Impossible</option>
+                    </select>
+                </label>
+                <div class="field">
+                    <span class="field-label">AI plays</span>
+                    <div class="segmented small" role="group" aria-label="AI side">
+                        <button id="ai-as-x" class="seg-btn" type="button" aria-pressed="false">X</button>
+                        <button id="ai-as-o" class="seg-btn active" type="button" aria-pressed="true">O</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-status" id="game-status" aria-live="polite">
+            <span id="status-text">Player X's turn</span>
+        </div>
+
+        <div class="board-frame">
+        <div class="game-board" id="game-board" role="grid" aria-label="Tic-Tac-Toe board">
+            <div class="cell" data-cell="0" role="button" tabindex="0" aria-label="Cell 1"></div>
+            <div class="cell" data-cell="1" role="button" tabindex="0" aria-label="Cell 2"></div>
+            <div class="cell" data-cell="2" role="button" tabindex="0" aria-label="Cell 3"></div>
+            <div class="cell" data-cell="3" role="button" tabindex="0" aria-label="Cell 4"></div>
+            <div class="cell" data-cell="4" role="button" tabindex="0" aria-label="Cell 5"></div>
+            <div class="cell" data-cell="5" role="button" tabindex="0" aria-label="Cell 6"></div>
+            <div class="cell" data-cell="6" role="button" tabindex="0" aria-label="Cell 7"></div>
+            <div class="cell" data-cell="7" role="button" tabindex="0" aria-label="Cell 8"></div>
+            <div class="cell" data-cell="8" role="button" tabindex="0" aria-label="Cell 9"></div>
+        </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" id="restart-btn" type="button">Restart Game</button>
+            <button class="btn btn-secondary" id="reset-scores-btn" type="button">Reset Scores</button>
+        </div>
+
+        <div class="winning-line" id="winning-line"></div>
+
+        <div class="overlay" id="end-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+            <div class="overlay-card">
+                <div class="overlay-status" id="overlay-status">Player X wins!</div>
+                <div class="overlay-actions">
+                    <button class="btn btn-primary" id="play-again-btn" type="button">Play Again</button>
+                    <button class="btn btn-secondary" id="overlay-reset-btn" type="button">Reset Scores</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
