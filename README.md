@@ -2,16 +2,14 @@
 
 A polished Tic-Tac-Toe with a modern UI, AI opponent, and an optional realistic “pebble-on-fabric” theme.
 
+Built with the help of Cursor and GPT-5 (AI).
+
 ## Versions Available
 
 1. **Web Version** (`index.html`, `styles.css`, `script.js`) — Responsive UI, theme toggle, scores, AI
 2. **Console Version** (`tic_tac_toe.py`) — Python console-based game
 
-## Screenshots
-
-Modern web UI (pebble theme):
-
-![Board Screenshot](docs/screenshot-board.svg)
+<!-- Screenshots intentionally omitted -->
 
 ## Web Version Features
 
